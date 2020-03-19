@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 16px;
+}
+body main {
+  flex: 1 0 auto;
+}
+body main header {
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 3vh;
+}
+body main header h1 {
+  font-size: 32px;
+}
+body main header ul {
+  display: flex;
+  list-style: none;
+}
+body main header ul li {
+  margin-left: 30px;
+}
+body main header ul h3 {
+  font-weight: normal;
+}
+body main header div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+body main header div img {
+  width: 102.4px;
+}
+body main header div #motomoto {
+  margin-left: 20px;
+}
+body main #things {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body main #things .content {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 5vw;
+  background-color: #E0E4CC;
+  text-align: justify;
+  text-justify: inter-word;
+  display: flex;
+  flex-direction: column;
+}
+body .texcior {
+  padding: 15% 10% 5% 10%;
+}
+body .dzyndzel {
+  align-self: flex-end;
+  padding: 5% 10%;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+body .dzyndzel h2 {
+  font-size: 24px;
+}
+body #dz1 {
+  background-color: lightskyblue;
+}
+body #dz2 {
+  background-color: coral;
+}
+body #dz3 {
+  background-color: lightpink;
+}
+body footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #E0E4CC;
+  border-top-color: black;
+  border-top-style: solid;
+  border-top-width: 1px;
+  width: 100%;
+  padding: 30px 0;
+  flex-shrink: 0;
+}
+
+#burger {
+  padding: 8px;
+  background-color: #E0E4CC;
+  border: 1px solid black;
+  border-radius: 15px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+/* Mobile */
+@media only screen and (max-width: 599px) {
+  main {
+    width: 90vw;
+  }
+
+  #motomoto {
+    display: none;
+  }
+
+  .content {
+    flex-basis: 100%;
+  }
+
+  #meniu {
+    display: none;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  main {
+    width: 90vw;
+  }
+
+  #uno {
+    flex-basis: 100%;
+  }
+  #uno .texcior {
+    padding: 7.5% 5% 2.5% 5%;
+  }
+  #uno .dzyndzel {
+    padding: 2.5% 5%;
+  }
+
+  #dos, #tres {
+    flex-basis: 42.5vw;
+  }
+
+  #meniu {
+    display: none;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+  main {
+    width: 90vw;
+  }
+
+  .content {
+    flex-basis: 26.6666666667vw;
+  }
+
+  #burger {
+    display: none;
+    padding: 8px;
+    background-color: #E0E4CC;
+    border: 1px solid black;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
