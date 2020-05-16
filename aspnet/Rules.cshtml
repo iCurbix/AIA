@@ -1,0 +1,35 @@
+﻿@{ 
+    if (Session["rules"] == null) { Session["rules"] = new List<string>(); }
+
+    dynamic rules = Session["rules"];
+
+    dynamic rule = Request["rule"];
+    if (IsPost && !String.IsNullOrEmpty(rule))
+    {
+        rules.Add(rule);
+        Session["rules"] = rules;
+        Response.Redirect("Rules.cshtml");
+    }
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h3>Rules list:</h3>
+    <ul>
+        @foreach (dynamic rul in rules)
+        {
+            <li>
+                @rul
+            </li>
+        }
+    </ul>
+    <h3>Add a rule:</h3>
+    <form action="~/Rules.cshtml" method="post">
+        <input type="text" name="rule" id="rule" value="some rule"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
